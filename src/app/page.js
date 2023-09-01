@@ -5,11 +5,13 @@ export default function Home() {
   //mock
   const filmes = [
     {
+      id:1,
       titulo: "Star Wars",
       nota: 9.5,
       poster: "https://www.themoviedb.org/t/p/w94_and_h141_bestv2/nNTvClgnd3FfQ45IVQkk4HLHuBN.jpg"
     },
     {
+      id:2,
       titulo: "Barbie",
       nota: 9.0,
       poster: "https://www.themoviedb.org/t/p/w94_and_h141_bestv2/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg"
@@ -23,14 +25,13 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Fiap Filmes</h1>
       </nav>
 
-      <Titulo>em alta</Titulo>
+      <Titulo>Em alta</Titulo>
 
       <section className="flex flex-wrap gap-2">
         {filmes.map( filme => <CardFilme filme={filme} /> )}
       </section>
 
-      <Titulo>lançamentos</Titulo>
-
+      <Titulo>Lançamentos</Titulo>
     </>
   )
 }
