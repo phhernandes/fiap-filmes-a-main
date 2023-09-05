@@ -31,12 +31,12 @@ export default function CardFilme({filme}){
         <div className="flex flex-col items-center justfy-between gap-1 w-40 m-2 relative">
             {favorito ? 
             <HeartIcon 
-              className="h-6 w-6 text-red-600 absulote top-1 right-2 cursor-pointer"
+              className="h-6 w-6 text-red-600 absolute top-1 right-2 cursor-pointer"
               onClick={desfavoritar} 
               />
             :
             <HeartIconOutline 
-              className="h-6 w-6 text-red-600 absulote top-1 right-2 cursor-pointer hover:text-red-600" 
+              className="h-6 w-6 text-zinc-100 absolute top-1 right-2 cursor-pointer hover:text-red-600" 
               onClick={favoritar} 
               />
         }
