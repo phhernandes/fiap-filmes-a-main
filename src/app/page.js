@@ -25,7 +25,7 @@ export default async function Home() {
         {filmes.map( filme => <CardFilme filme={filme} /> )}
       </section>
 
-      <Titulo>Lançamentos</Titulo>
+      <Titulo>sssLançamentos</Titulo>
     </>
   )
 }
